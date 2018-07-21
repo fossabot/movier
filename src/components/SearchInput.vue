@@ -6,6 +6,7 @@
         :class="{ dark }"
         :value="value"
         @keyup.enter="handleChange"
+        placeholder="e.g Star Wars"
       />
     </div>
 </template>
@@ -55,6 +56,9 @@ export default {
     &:focus{
       outline: none;
       box-shadow: 0 10px 20px -8px rgba(255, 255, 255, .5);
+    }
+    &::placeholder {
+      color: rgba(#fff,.5)
     }
   }
   .dark{
