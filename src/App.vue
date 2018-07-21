@@ -88,7 +88,7 @@ export default {
 }
 body{
   font-family: "Montserrat", sans-serif;
-  color: #fff;
+  color: #000;
   margin: 0;
   padding: 0;
 }
