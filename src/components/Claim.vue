@@ -17,6 +17,7 @@ export default {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: #fff;
 }
 .claim {
   font-size: 50px;
