@@ -1,7 +1,8 @@
 module.exports = {
   root: true,
   env: {
-    node: true
+    node: true,
+    API_KEY: process.env.API_KEY
   },
   'extends': [
     'plugin:vue/essential',
