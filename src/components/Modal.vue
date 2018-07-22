@@ -56,6 +56,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
 .outerWrapper {
   background: #fff;
   color: #000;
@@ -111,13 +112,14 @@ export default {
   display: flex;
   height: 100%;
   padding: 50px;
-  width: 100%;
+  width: auto;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   overflow-y: auto;
 
   @media (min-width: 1024px) {
+    overflow-y: hidden;
     flex-direction: row;
     .photo {
       margin-right: 20px;
@@ -125,8 +127,8 @@ export default {
   }
   .photo {
     background: #000;
-    margin-top: 400px;
     img {
+      display: block;
       width: 250px;
       height: 400px;
     }
