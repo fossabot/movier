@@ -46,7 +46,7 @@ export default {
         this.loading = false;
       })
       .catch((error) => {
-        console.log(error);
+        throw error;
       });
   },
 };

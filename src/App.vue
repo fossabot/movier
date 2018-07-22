@@ -71,7 +71,7 @@ export default {
           this.state = 1;
         })
         .catch((error) => {
-          console.log(error);
+          throw error;
         });
     },
   },
