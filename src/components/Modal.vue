@@ -1,18 +1,20 @@
 <template>
     <div class="outerWrapper">
-        <div class="innerWrapper" v-if="!loading">
-            <div class="photo">
-                <img :src="data.Poster" alt="Lol">
-            </div>
-            <div class="description">
-                <h2 class="title">{{ data.Title }}</h2>
-                <span class="details">{{ data.Country }} {{ data.Year }} {{ data.Runtime }}</span>
-                <p class="description">{{ data.Plot }}</p>
-                <p class="genre">{{ data.Genre }}</p>
-                <p class="director">{{ data.Director }}</p>
-            </div>
+        <div class="loader" v-if="loading">
+        <div></div><div></div><div></div><div></div></div>
+        <div class="innerWrapper">
+          <div class="photo">
+            <img :src="data.Poster" alt="Lol">
+          </div>
+          <div class="description">
+            <h2 class="title">{{ data.Title }}</h2>
+            <span class="details">{{ data.Country }} {{ data.Year }} {{ data.Runtime }}</span>
+            <p class="description">{{ data.Plot }}</p>
+            <p class="genre">{{ data.Genre }}</p>
+            <p class="director">{{ data.Director }}</p>
+          </div>
         </div>
-        <div class="close" @click="$emit('closeModal')"></div>
+      <div class="close" @click="$emit('closeModal')"></div>
     </div>
 </template>
 
@@ -40,7 +42,8 @@ export default {
   mounted() {
     this.itemID = this.ID;
     this.loading = true;
-    axios.get(`${API}&i=${this.itemID}&plot=full`)
+    axios
+      .get(`${API}&i=${this.itemID}&plot=full`)
       .then((res) => {
         this.data = res.data;
         this.loading = false;
@@ -61,7 +64,11 @@ export default {
   position: fixed;
   top: 0;
   left: 0;
-
+  .loader{
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+  }
   @media (min-width: 1024px) {
     max-width: 70%;
     height: 60%;
@@ -104,24 +111,27 @@ export default {
   display: flex;
   height: 100%;
   padding: 50px;
+  width: 100%;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  overflow-y: auto;
 
   @media (min-width: 1024px) {
     flex-direction: row;
-    .photo{
-        margin-right: 20px;
+    .photo {
+      margin-right: 20px;
     }
   }
   .photo {
     background: #000;
+    margin-top: 400px;
     img {
       width: 250px;
       height: 400px;
     }
   }
-  .title{
+  .title {
     margin-bottom: 0;
   }
   .description {
