@@ -1,26 +1,16 @@
-# Movier app
+# :tv: Movier
+Movies searcher written in Vue.js <br/>
+**Link:** http://bit.ly/kj-movier
 
-## Project setup
-```
-npm install
-```
+## :computer: Use
+If you don't have git or node, you can install they here [Git](https://git-scm.com/downloads "Git") [Node.js](https://nodejs.org/en/download/ "Node.js") 
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Run your unit tests
-```
-npm run test:unit
-```
+     # Clone this repository
+    git clone https://github.com/KrystianJonca/express-example-app
+    # Go into the repository
+    cd express-example-app
+    # Install dependencies
+    npm install
+    # Run the app
+    npm run serve
+    
