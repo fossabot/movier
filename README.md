@@ -1,9 +1,12 @@
+<img alt="Preview" src="https://raw.githubusercontent.com/KrystianJonca/movier/master/ss.png"/>
+<br/>
+
 # :tv: Movier
 Movies searcher written in Vue.js <br/>
 **Link:** https://movier.netlify.com/
 
 ## :computer: Use
-If you don't have git or node, you can install they here [Git](https://git-scm.com/downloads "Git") [Node.js](https://nodejs.org/en/download/ "Node.js") 
+If you don't have git or node, you can install they here [Git](https://git-scm.com/downloads "Git") [Node.js](https://nodejs.org/en/download/ "Node.js")
 
      # Clone this repository
     git clone https://github.com/KrystianJonca/express-example-app
@@ -13,4 +16,3 @@ If you don't have git or node, you can install they here [Git](https://git-scm.c
     npm install
     # Run the app
     npm run serve
-    
