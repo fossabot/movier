@@ -1,6 +1,6 @@
 # :tv: Movier
 Movies searcher written in Vue.js <br/>
-**Link:** http://bit.ly/kj-movier
+**Link:** https://movier.netlify.com/
 
 ## :computer: Use
 If you don't have git or node, you can install they here [Git](https://git-scm.com/downloads "Git") [Node.js](https://nodejs.org/en/download/ "Node.js") 
