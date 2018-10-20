@@ -5,7 +5,7 @@
 Movies searcher written in Vue.js <br/>
 **Link:** https://movier.netlify.com/
 
-## ⚡️ Usage
+## 💻 Usage
 If you don't have git or node, you can install they here [Git](https://git-scm.com/downloads "Git") [Node.js](https://nodejs.org/en/download/ "Node.js")
 
      # Clone this repository
