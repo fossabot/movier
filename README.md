@@ -1,11 +1,11 @@
-<img alt="Preview" src="https://raw.githubusercontent.com/KrystianJonca/movier/master/ss.png"/>
+<img alt="Preview" src="https://raw.githubusercontent.com/KrystianJonca/movier/master/preview.png"/>
 <br/>
 
-# :tv: Movier
+# 📺 Movier
 Movies searcher written in Vue.js <br/>
 **Link:** https://movier.netlify.com/
 
-## :computer: Use
+## ⚡️ Usage
 If you don't have git or node, you can install they here [Git](https://git-scm.com/downloads "Git") [Node.js](https://nodejs.org/en/download/ "Node.js")
 
      # Clone this repository
@@ -16,3 +16,9 @@ If you don't have git or node, you can install they here [Git](https://git-scm.c
     npm install
     # Run the app
     npm run serve
+
+## 🔧 Build using
+[Vue CLI 3](https://cli.vuejs.org/)
+
+## 📋 License
+MIT License - see the [LICENSE.md](LICENSE) file for details
